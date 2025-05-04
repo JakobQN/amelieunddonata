@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quarterlife – oder ein Vierteljahrhundert jung</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#aa4242',secondary:'#3E4A42'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Montserrat', sans-serif;
+scroll-behavior: smooth;
+}
+.speech-bubble {
+position: relative;
+background: #aa4242;
+border-radius: 1rem;
+padding: 1rem;
+margin-bottom: 1.5rem;
+}
+.speech-bubble:after {
+content: '';
+position: absolute;
+top: 100%;
+left: 20%;
+border: 12px solid transparent;
+border-top-color: rgb(33, 164, 37);
+}
+.speech-bubble.right {
+background: #3E4A42;
+color: white;
+}
+.speech-bubble.right:after {
+left: 80%;
+border-top-color: #3E4A42;
+}
+.page {
+min-height: 100vh;
+overflow: hidden;
+}
+input[type="checkbox"] {
+appearance: none;
+-webkit-appearance: none;
+width: 1.5rem;
+height: 1.5rem;
+border: 2px solid #3E4A42;
+border-radius: 4px;
+margin-right: 0.5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+input[type="checkbox"]:checked {
+background-color: rgb(33, 164, 37);
+border-color: rgb(33, 164, 37);
+}
+input[type="checkbox"]:checked::before {
+content: "✓";
+color: white;
+font-size: 1rem;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<!-- Seite 1: Einladungskarte -->
+<section id="einladung" class="page bg-white flex flex-col items-center justify-center py-12 px-4 md:px-8">
+    <div class="relative">
+        <!-- Bild-Container -->
+        <div class="rounded-2xl overflow-hidden h-[70vh] shadow-lg">
+          <img src="skiHoch.jpg" alt="Amelie & Donata" class="w-full h-full object-cover object-top">
+        </div>
+        <p class="text-center my-[15px] m:text-xl italic text-secondary">
+            Amelie und Donata
+          </p>
+<div class="text-center mb-5">
+    <h1 class="text-4xl md:text-5xl font-bold text-primary mb-3 mt-5">Viertel Jahrhundert Jung</h1>
+    </div>
+    <p class="text-center my-[15px] m:text-xl italic text-secondary">
+        Wir freuen uns auf Dich!
+      </p>
+    
+<div class="text-center">
+    <a href="details.html" class="inline-block bg-primary hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-button shadow-md transition-all duration-300 whitespace-nowrap text-lg">
+        zur Einladung
+      </a>
+</a>
+</div>
+</div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scroll für Anker-Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>
