@@ -26,7 +26,9 @@ font-family: 'Montserrat', sans-serif;
   <div class="rounded-2xl overflow-hidden shadow-lg">
     <img src="sitzenMitHund.jpg" alt="Amelie & Donata" class="w-full h-auto object-cover object-top">
   </div>
+  
 </div>
+<span style="display: block; text-align: center;">Wir werden 25 – das wollen wir mit euch feiern!</span>
 <div class="md:w-1/2 space-y-8">
 <div class="bg-white rounded-2xl p-6 shadow-md">
 <h3 class="text-2xl font-semibold text-primary mb-6 flex items-center">
@@ -78,9 +80,9 @@ Programm
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="bg-white rounded-2xl p-6 shadow-md">
 <h3 class="text-2xl font-semibold text-primary mb-6 flex items-center">
-RSVP
+UAWG
 </h3>
-<p class="mb-4">Bitte gebt uns bis zum <span class="font-bold">30.06.</span> Bescheid, ob ihr dabei sein könnt.</p>
+<p class="mb-4">bis<span class="font-bold"> 30.06.2025</span> über folgendes Formular</p>
 <a href="https://forms.gle/dWYGikKMSvDuQWAN9" class="inline-block bg-secondary hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-button text-center shadow-md transition-all duration-300 whitespace-nowrap">
 <i class="ri-mail-send-line mr-2"></i>zum Antwortformular
 </a>
@@ -104,28 +106,35 @@ Location
 </div>
 </div>
 <h4 class="font-bold mb--2">Parken</h4>
-<p class="mb-1">Parken an der Location direkt ist nicht möglich. Aber an folgenden Orten:</p>
+<p class="mb-1">Parken am Haus <span class="font-bold"> nicht möglich</span>.<br> Im Bild unten sind Parkmöglichkeiten in Rot und die Zugänge zum Haus blau eingezeichnet:</p>
+
+
+<!-- Link zum Öffnen -->
 <div class="flex gap-4 mt-3">
-    <a href="https://maps.app.goo.gl/cgY4VvmHqZZaKKsV9" class="text-primary hover:underline inline-block">
-    <span class="flex items-center mb-5">
-    <i class="ri-map-pin-line mr-1"></i> Von hier kann man am Tennisplatz vorbei über die Wiese rein laufen 
-    </span>
-    </a>
-    </div>
-    <div class="flex gap-4 mt-3">
-        <a href="https://maps.app.goo.gl/cgY4VvmHqZZaKKsV9" class="text-primary hover:underline inline-block">
-        <span class="flex items-center mb-5">
-        <i class="ri-map-pin-line mr-1"></i> Von hier über den Waldweg direkt zum Grundstück 
-        </span>
-        </a>
-        </div>
-        <div class="flex gap-4 mt-3">
-            <a href="https://maps.app.goo.gl/cgY4VvmHqZZaKKsV9" class="text-primary hover:underline inline-block">
-            <span class="flex items-center mb-5">
-            <i class="ri-map-pin-line mr-1"></i> Oder von hier über den Waldweg direkt zum Grundstück 
-            </span>
-            </a>
-            </div>
+  <a href="javascript:void(0)" onclick="document.getElementById('overlay').classList.remove('hidden')" 
+     class="text-primary hover:underline inline-block">
+    Parkmöglichkeiten
+  </a>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="fixed inset-0 bg-black bg-opacity-60 flex items-start justify-center z-50 hidden">
+  <div class="relative mt-10 max-h-[80vh] w-auto max-w-[90vw]">
+    <button onclick="document.getElementById('overlay').classList.add('hidden')" 
+            class="absolute top-2 right-2 bg-white text-black rounded-full px-3 py-1 text-sm shadow hover:bg-gray-200 transition">
+      Schließen
+    </button>
+    <img src="parken.jpg" alt="Parkmöglichkeiten" class="max-h-[80vh] w-auto rounded shadow-lg" />
+  </div>
+</div>
+
+
+
+
+
+
+
+
 </div>
 </div>
 <div class="bg-white rounded-2xl p-6 shadow-md">
@@ -134,7 +143,11 @@ Location
     </h3>
     <div class="space-y-4">
     <div>
-        <p class="mb-3">Sehr begrenzte schlafmöglichkeiten vor Ort: First come First serve. SCHREIBEN AN WEN?</p>
+        <p class="mb-3">
+            Sehr begrenzte Schlafmöglichkeiten vor Ort: First come, first serve. Bitte meldet euch dafür bei&nbsp;<a href="https://wa.me/491756475386" 
+               class="text-[#AA4242] font-semibold transition-all duration-300 hover:bg-[#AA4242] hover:bg-opacity-50 hover:text-white underline" 
+               target="_blank">Amelie</a>.
+          </p>
         <h4 class="font-bold mb-2">Hotels</h4>
             <p>Best Western Plus Parkhotel Verlbert (5 km)</li>
             <p class="pl-4 italic">Abrufkontingent bis zum 18.07.2025 unter ... buchbar</p>
