@@ -39,14 +39,14 @@ Programm
 <div>
 <h4 class="font-bold mb-2">Freitag 29.08.</h4>
 <div class="flex">
-<span class="font-medium w-16">19:30</span>
+<span class="font-medium w-12">19:30</span>
 <span>Get-Together</span>
 </div>
 </div>
 <div>
 <h4 class="font-bold mb-2">Samstag 30.08.</h4>
 <div class="flex">
-<span class="font-medium w-16">10:00</span>
+<span class="font-medium w-12">10:00</span>
 <span>Brunch</span>
 </div>
 <div class="flex mt-2">
@@ -54,7 +54,7 @@ Programm
 <span class="italic text-gray-600">Tagesprogramm (Schwimmen & Tennis)</span>
 </div>
 <div class="flex mt-2">
-<span class="font-medium w-16">18:30</span>
+<span class="font-medium w-12">18:30</span>
 <span>Empfang</span>
 </div>
 <div class="flex mt-2">
@@ -65,7 +65,7 @@ Programm
 <div>
 <h4 class="font-bold mb-2">Sonntag 31.08.</h4>
 <div class="flex">
-<span class="font-medium w-16">10:00</span>
+<span class="font-medium w-12">10:00</span>
 <span>Brunch</span>
 </div>
 <div class="flex mt-2">
@@ -106,26 +106,21 @@ Location
 </div>
 </div>
 <h4 class="font-bold mb--2">Parken</h4>
-<p class="mb-1">Parken am Haus <span class="font-bold"> nicht möglich</span>.<br> Im Bild unten sind Parkmöglichkeiten in Rot und die Zugänge zum Haus blau eingezeichnet:</p>
-
-
-<!-- Link zum Öffnen -->
-<div class="flex gap-4 mt-3">
-  <a href="javascript:void(0)" onclick="document.getElementById('overlay').classList.remove('hidden')" 
-     class="text-primary hover:underline inline-block">
-    Parkmöglichkeiten
-  </a>
-</div>
+<p class="mb-1">Parken am Haus ist <span class="font-bold"> nicht möglich</span>.<br> <a href="javascript:void(0)" onclick="document.getElementById('overlay').classList.remove('hidden')" 
+     class="text-[#AA4242] font-semibold transition-all duration-300 hover:bg-[#AA4242] hover:bg-opacity-50 hover:text-white underline">
+    Hier
+  </a>sind Parkmöglichkeiten in Rot und die Zugänge zum Haus in Blau eingezeichnet.</p>
 
 <!-- Overlay -->
-<div id="overlay" class="fixed inset-0 bg-black bg-opacity-60 flex items-start justify-center z-50 hidden">
-  <div class="relative mt-10 max-h-[80vh] w-auto max-w-[90vw]">
-    <button onclick="document.getElementById('overlay').classList.add('hidden')" 
-            class="absolute top-2 right-2 bg-white text-black rounded-full px-3 py-1 text-sm shadow hover:bg-gray-200 transition">
-      Schließen
-    </button>
-    <img src="parken.jpg" alt="Parkmöglichkeiten" class="max-h-[80vh] w-auto rounded shadow-lg" />
-  </div>
+<div id="overlay" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden flex items-center justify-center">
+  <!-- Schließen-Button außerhalb des Bildes -->
+  <button onclick="document.getElementById('overlay').classList.add('hidden')" 
+          class="fixed top-8 right-4 bg-white text-black rounded-full px-3 py-1 text-sm shadow hover:bg-gray-200 transition z-50">
+    Schließen
+  </button>
+  
+  <!-- Bild -->
+  <img src="parken.jpg" alt="Parkmöglichkeiten" class="max-h-[80vh] w-auto rounded shadow-lg z-40" />
 </div>
 
 
@@ -143,17 +138,33 @@ Location
     </h3>
     <div class="space-y-4">
     <div>
-        <p class="mb-3">
-            Sehr begrenzte Schlafmöglichkeiten vor Ort: First come, first serve. Bitte meldet euch dafür bei&nbsp;<a href="https://wa.me/491756475386" 
-               class="text-[#AA4242] font-semibold transition-all duration-300 hover:bg-[#AA4242] hover:bg-opacity-50 hover:text-white underline" 
-               target="_blank">Amelie</a>.
-          </p>
-        <h4 class="font-bold mb-2">Hotels</h4>
-            <p>Best Western Plus Parkhotel Verlbert (5 km)</li>
+        <p class="mb-5">
+            Keine Schlafmöglichkeiten vor Ort. Das hier sind Hotels in der näheren Umgebung:
+            <p><span class="font-bold">Best Western Plus Parkhotel Verlbert</span> (8km)</p>
+              <p class="pl-4 italic">Doppelzimmer 120€/Nacht</p>
             <p class="pl-4 italic">Abrufkontingent bis zum 18.07.2025 unter ... buchbar</p>
-            <a href="https://maps.app.goo.gl/Adom6v3Bq6iTTjGm7" class="pl-4 text-[#AA4242] font-semibold transition-all duration-300 hover:bg-[#AA4242] hover:bg-opacity-50 hover:text-white underline">
+            <a href="https://www.bestwestern.de/hotels/Velbert/Best-Western-Plus-Parkhotel-Velbert/hotel?etcc_cmp=dima&etcc_med=online&etcc_partner=gmb&et_cmp_seg1=paid&et_cmp_seg3=GmB_95353_velbert&etcc_grp=google&iata=00171880" class="pl-4 text-[#AA4242] font-semibold transition-all duration-300 hover:bg-[#AA4242] hover:bg-opacity-50 hover:text-white underline">
                 Link
-              </a>        
+              </a>
+            <a href="https://maps.app.goo.gl/RzEjypeWXYfghcbY6" class="pl-4 text-[#AA4242] font-semibold transition-all duration-300 hover:bg-[#AA4242] hover:bg-opacity-50 hover:text-white underline">
+                Maps
+              </a> 
+            <p class="mt-4"><span class="font-bold ">Hotel Graf Hardenberg</span> (2km)</p>
+            <p class="pl-4 italic">Doppelzimmer 80€/Nacht</p>
+            <a href="https://www.graf-hardenberg-neviges.com/" class="pl-4 text-[#AA4242] font-semibold transition-all duration-300 hover:bg-[#AA4242] hover:bg-opacity-50 hover:text-white underline">
+                Link
+              </a>
+            <a href="https://maps.app.goo.gl/7bbZ6ZTVjZ353CCk7" class="pl-4 text-[#AA4242] font-semibold transition-all duration-300 hover:bg-[#AA4242] hover:bg-opacity-50 hover:text-white underline">
+                Maps
+              </a> 
+            <p class="mt-4"><span class="font-bold mt-4">Jugendherberge Velbert</span> (8km)</p>
+            <p class="pl-4 italic">30€ p.P/Nacht</p>
+            <a href="https://jugendherberge-velbert.de/" class="pl-4 text-[#AA4242] font-semibold transition-all duration-300 hover:bg-[#AA4242] hover:bg-opacity-50 hover:text-white underline">
+                Link
+              </a>
+            <a href="https://maps.app.goo.gl/DJ395P1QLkg9ea8f6" class="pl-4 text-[#AA4242] font-semibold transition-all duration-300 hover:bg-[#AA4242] hover:bg-opacity-50 hover:text-white underline">
+                Maps
+              </a>                 
     </div>
     </div>
     </div>
